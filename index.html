@@ -2,252 +2,230 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- google fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700;900&family=Nosifer&family=Playfair+Display:wght@400;600;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <!-- font awesome icons -->
+    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/9c3d7ef638.js" crossorigin="anonymous"></script>
 
     <!-- custom styles -->
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="assets/styles/index.css">
 
-    <!-- custom scripts -->
-    <script src="scripts/home.js" defer></script>
-    <title>RISAA'J Healthcare and Maternity Home</title>
+    <!-- custom script -->
+    <script src="scripts/animation.js" defer></script>
+
+    <title>Nwike's ART</title>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h3 id="menu_toggle_btn"><i class="fa fa-bars"></i></h3>
-        <h1 id="logo"><a href="">RISAA'J</a></h1>
-        <nav id="nav_links">
-            <span><a href="#">HOME</a></span>
-            <span><a href="#about">ABOUT US</a></span>
-            <span><a href="#services">SERVICES</a></span>
-            <span><a href="">CONTACT</a></span>
+        <img src="assets\site_images\nwike_art1.jpg" alt="Image 1" id="home_bg">
+        <div class="image-overlay"></div>
+
+        <!-- Mobile Nav starts-->
+        <nav id="mobile_nav">
+            <h1>NWIKE'S <span>ART</span></h1>
+            <img src="assets/site_images/burger-solid (1).svg" width="30px" id="menu_btn">
+            
+            <div class="nav_links">
+                <span class="close_nav_btn">X</span>
+                <div class="link">
+                    <p><a href="index.html">Home</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="">About</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="">Selected Works</a></p>
+                </div>
+            </div>
         </nav>
-        <button>BOOK AN APPOINTMENT</button>
+        <!-- Mobile Nav Ends -->
+
+        <!-- Desktop Nav Starts -->
+        <nav id="desktop_nav">
+            <h1>NWIKE'S <span>ART</span></h1>
+
+            <div class="links">
+                <div class="link">
+                    <p><a href="index.html">Home</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="">About</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="">Selected Works</a></p>
+                </div>
+            </div>
+        </nav>
+        <!-- Desktop Nav Ends -->
+
+        <!-- Hero Section -->
+        <div id="hero">
+            <div class="hero_text">
+                <h1>NWIKE'S <span>ART</span></h1>
+                <button>Shop Now</button>
+            </div>
+        </div>
     </header>
+    <!-- Header Section Ends -->
 
-    <!-- hero section -->
-    <section class="hero">
-        <h1 id="hero_text" class="hide">Your WellBeing Is Our Priority</h1>
+
+    <!-- Quote Section Starts -->
+    <section id="quote">
+        <h3>“Everybody born comes from the Creator trailing wisps of glory. We come from the Creator with creativity. I think that each one of us is born with creativity.” <br> – Maya Angelou</h3>
+
+        <button><a href="">Explore Art Works</a></button>
     </section>
-    <!-- hero section ends -->
+    <!-- Quote Section Ends -->
 
-    <!-- about section -->
-    <section class="about" id="about">
-        <h2>About <span>RISAA'J</span></h2>
-        <div class="about_us_inner_wrapper" id="about">
-            <p> we are a reputable and a well hospital with about a decade worth of experience our patients are our top piority we specialise in various medical health care !
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tenetur et laboriosam, fuga molestiae voluptates ullam amet ex vitae atque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt soluta velit ea. Repudiandae a fuga perferendis tempora dolores quaerat nemo?
-            </p>
+
+    <!-- Bio Section starts -->
+    <section id="bio">
+        <div class="artist_img_wrapper">
+            <img src="assets/site_images/artist_image.jpg" alt="Artist Image" srcset="">
+        </div>
+        <div class="artist_info">
+            <h2>Agu Nwike</h2>
+
+            <p>
+                Agu Nwike, born in 2005 in Lagos, Nigeria, is a versatile artist and creative technologist based at the University of Benin. Founder of projects like POST-VIVO, Xylantha, AI Markus, and mask.in.drome, Nwike explores multimedia works, from sound to video.
+                <br>
+                Engaging with ever-changing social constructs, Nwike embraces process anarchy, favoring expressive clarity over technical completeness. With a love for foreign hip-hop and an interest in robotics, his creativity spans various domains.
+                <br>
+                While studying architecture at the University of Benin, Nwike seamlessly integrates academic insights into his art, influencing a distinctive style. His projects aim to bring out the utmost beauty, often showcasing mastery in pencil art.
+                <br>
+                Nwike's works featured in the Faculty of Environmental Science Student Association (FESSA) Uniben Exhibition, highlighting his impact within the university community.
+                <br>
+                Driven to inspire through his art, Nwike actively breaks down class barriers, promoting inclusivity and fostering an inclusive future in artistic expression. Agu Nwike's story is one of exploration, innovation, and a passionate pursuit of beauty in all forms.</p>
         </div>
     </section>
-    <!-- about section ends -->
+    <!-- Bio Section Ends -->
 
-    <!-- services section starts -->
-    <section class="services" id="services">
-        <h2>Our Services</h2>
-        <div class="services_card_wrapper">
-            <div class="service_card">
-                <div class="icon material-symbols-outlined">
-                    <img src="svgs/clock-rotate-left-solid.svg" alt="" class="svg">
+    <!-- Work and thoughts Section starts -->
+    <section id="work_and_thoughts">
+        <h2>Work and Thoughts</h2>
+        <div class="w_a_t_container">
+            <div class="w_a_t">
+                <div class="image">
+                    <img src="assets/site_images/nwike_art3.jpg" alt="">
                 </div>
-                <div class="services_info">
-                    <h3>24Hrs Functional</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur doloribus repudiandae fugit alias sit atque amet culpa harum illum.</p>
+                <div class="image_bio">
+                    <p><i>How does the language of hands speak the untold stories of our lives?</i></p>
                 </div>
-            </div>
-            <div class="service_card">
-                <div class="icon">
-                    <img src="svgs/user-doctor-solid.svg" alt="" class="svg">
-                </div>
-                <div class="services_info">
-                    <h3>Surgery</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur doloribus repudiandae fugit alias sit atque amet culpa harum illum.</p>
-                </div>
-            </div>
-            <div class="service_card">
-                <div class="icon">
-                    <img src="svgs/house-medical-circle-check-solid.svg" alt="" class="svg">
-                </div>
-                <div class="services_info">
-                    <h3>Radiography</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur doloribus repudiandae fugit alias sit atque amet culpa harum illum.</p>
-                </div>
-            </div>
-            <div class="service_card">
-                <div class="icon">
-                    <img src="svgs/people-group-solid.svg" alt="" class="svg">
-                </div>
-                <div class="services_info">
-                    <h3>Qualified Staffs</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur doloribus repudiandae fugit alias sit atque amet culpa harum illum.</p>
-                </div>
-            </div>
-            <div class="service_card">
-                <div class="icon">
-                    <img src="svgs/truck-medical-solid.svg" alt="" class="svg">
-                </div>
-                <div class="services_info">
-                    <h3>Ambulance Pickups</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur doloribus repudiandae fugit alias sit atque amet culpa harum illum.</p>
-                </div>
-            </div>
-            <div class="service_card">
-                <div class="icon">
-                    <img src="svgs/heart-circle-plus-solid.svg" alt="" class="svg">
-                </div>
-                <div class="services_info">
-                    <h3>Heart And Lung Care</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur doloribus repudiandae fugit alias sit atque amet culpa harum illum.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- servics section ends -->
-
-    <!-- facilities section starts -->
-    <section class="facilities">
-        <h2>Our Facilities</h2>
-        <div class="facilities_inner_wrapper">
-            <div class="facility">
-                <div class="facility_img">
-                    <img src="site_images/facility1.jpg" alt="">
-                </div>
-                <div class="facility_layer">
-                    <h3>A Standard Microscope</h3>
+                <div class="image_desc">
+                    <h3>Portraiture: "A Walk Through Time"</h3>
+                    <p>In <i>"A Walk Through Time," </i>hands become the storytellers of life's journey. The delicate interplay between young and weathered hands suggests a shared narrative, emphasizing the transient beauty of time. The bangle's inscription, "It's Only A Short Stroll, Enjoy It," prompts contemplation on the fleeting nature of our existence and the wisdom embedded in aging hands.</p>
                 </div>
             </div>
 
-            <div class="facility">
-                <div class="facility_img">
-                    <img src="site_images/facility2.jpg" alt="">
+            <div class="w_a_t">
+                <div class="image">
+                    <img src="assets/site_images/nwike_art1.jpg" alt="">
                 </div>
-                <div class="facility_layer">
-                    <h3>A Standard Microscope</h3>
+                <div class="image_bio">
+                    <p><i>Can innocence paint the brightest pictures in the canvas of the night?</i></p>
+                </div>
+                <div class="image_desc">
+                    <h3>Portraiture: "Moonlit Surprises"
+                    </h3>
+                    <p><i>"Moonlit Surprises"</i> captures the enchanting innocence of childhood. In the silent night, two young African souls, aged around 7 and 6, share a magical moment. The girl, eyes closed, anticipates a surprise from the boy. As he unveils a radiant heart in his palms, the moonlight illuminates the tire they sit in, creating a timeless scene of youthful wonder, love, and the unspoken beauty of shared secrets.</p>
                 </div>
             </div>
 
-            <div class="facility">
-                <div class="facility_img">
-                    <img src="site_images/facility3.jpg" alt="">
+            <div class="w_a_t">
+                <div class="image">
+                    <img src="assets/site_images/nwike_art2.jpg" alt="">
                 </div>
-                <div class="facility_layer">
-                    <h3>A Standard Microscope</h3>
+                <div class="image_bio">
+                    <p><i>Can one canvas hold the contrasting tales of maturity and innocence?
+
+                    </i></p>
+                </div>
+                <div class="image_desc">
+                    <h3>Portraiture: "Duality of Joy"</h3>
+                    <p><i>"Duality of Joy"</i> paints a poignant portrait of contrasting emotions. On the left, the countenance of a young woman reflects the depth of experiences, marked by a matured gaze. On the right, a young girl beams with unbridled joy, embracing the simplicity of innocence. The split canvas captures the spectrum of life's journey—where one finds resilience in maturity, while the other revels in the pure, untainted bliss of youth</p>
                 </div>
             </div>
         </div>
     </section>
-    <br><br>
-    <!-- facilities section ends -->
+    <!--  Work and thoughts section ends -->
 
-    <!--  testimonies section starts -->
-    <section class="testimonies">
-        <h2>What Our Patients Say About Us</h2>
-        <div class="testimonies_wrapper">
-            <div class="testimony">
-                <div class="icon">
-                    <img src="svgs/user-solid.svg" alt="" class="loc">
-                </div>
-                <div class="testimonial">
-                    <h4>Mike Adenuga</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis, recusandae inventore totam neque saepe. Ex modi minima repellendus dolore, similique adipisci sunt corrupti culpa quis, enim at cupiditate doloribus.</p>
-                </div>
-            </div>
-            <div class="testimony">
-                <div class="icon">
-                    <img src="svgs/user-solid.svg" alt="" class="loc">
-                </div>
-                <div class="testimonial">
-                    <h4>Mike Adenuga</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis, recusandae inventore totam neque saepe. Ex modi minima repellendus dolore, similique adipisci sunt corrupti culpa quis, enim at cupiditate doloribus.</p>
-                </div>
-            </div>
-            <div class="testimony">
-                <div class="icon">
-                    <img src="svgs/user-solid.svg" alt="" class="loc">
-                </div>
-                <div class="testimonial">
-                    <h4>Mike Adenuga</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis, recusandae inventore totam neque saepe. Ex modi minima repellendus dolore, similique adipisci sunt corrupti culpa quis, enim at cupiditate doloribus.</p>
-                </div>
-            </div>
 
-            <div class="testimony">
-                <div class="icon">
-                    <img src="svgs/user-solid.svg" alt="" class="loc">
+    <!-- Selected Work Section Starts -->
+    <section id="selected_works">
+        <h2>Explore Art</h2>
+        <div class="inner_wrapper">
+            <div class="image_column">
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work1.jpg" alt="">
                 </div>
-                <div class="testimonial">
-                    <h4>Mike Adenuga</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis, recusandae inventore totam neque saepe. Ex modi minima repellendus dolore, similique adipisci sunt corrupti culpa quis, enim at cupiditate doloribus.</p>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work2.jpg" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work3.jpg" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work4.jpg" alt="">
                 </div>
             </div>
-
-            <div class="testimony">
-                <div class="icon">
-                    <img src="svgs/user-solid.svg" alt="" class="loc">
+            <div class="image_column">
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work5.jpg" alt="">
                 </div>
-                <div class="testimonial">
-                    <h4>Mike Adenuga</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis, recusandae inventore totam neque saepe. Ex modi minima repellendus dolore, similique adipisci sunt corrupti culpa quis, enim at cupiditate doloribus.</p>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work6.jpg" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work7.jpg" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work8.jpg" alt="">
                 </div>
             </div>
-
-            <div class="testimony">
-                <div class="icon">
-                    <img src="svgs/user-solid.svg" alt="" class="loc">
+            <div class="image_column">
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work9.jpg" alt="">
                 </div>
-                <div class="testimonial">
-                    <h4>Mike Adenuga</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis, recusandae inventore totam neque saepe. Ex modi minima repellendus dolore, similique adipisci sunt corrupti culpa quis, enim at cupiditate doloribus.</p>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work10.jpg" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work11.jpg" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work12.jpg" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="assets/site_images/work13.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <!-- testimonies section ends -->
-
-    <!-- maps section -->
-    <section class="location">
-        <h2>Where To Find Us <img src="svgs/location-dot-solid.svg" alt="" class="loc"></h2>
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.043484664357!2d3.341944914822356!3d6.516180425056056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d40c8c31f89%3A0xa294e8af7de86bb6!2sRisaa&#39;J%20Hospital!5e0!3m2!1sen!2sng!4v1658909899704!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-    <!-- apointment booking section starts -->
-    <section class="booking">
-        <h2>Book An Appointment With Us</h2>
-        <div class="booking_form_wrapper">
-            <form action="">
-                <label for="name">Your Full Name</label>
-                <input type="text" placeholder="Enter Your Full Name, e.g Odiase Efosa" id="name">
-
-                <label for="email">Email</label>
-                <input type="email" name="" id="email" placeholder="Your Email">
-
-                <label for="date">Date</label>
-                <input type="date" name="" id="date">
-
-                <label for="time">Time</label>
-                <input type="time" name="" id="time">
-
-                <button type="submit">Submit Booking</button>
-            </form>
-        </div>
-    </section>
-    <!-- appointment bookinng sectione ends -->
-
-    <!-- footer section starts -->
-    <br><br><br><br><br>
-    <footer>
-        <h2>Made By Odiase Efosa</h2>
-    </footer>
-    <!-- footer section ends -->
+    <!-- Selected Work Section Ends -->
 </body>
 </html>

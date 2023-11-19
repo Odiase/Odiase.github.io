@@ -550,6 +550,11 @@ header #hero button:hover {
   padding-bottom: 30px;
   color: #999;
 }
+.testimonials .testimonialBox h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Playfair Display", "serif";
+}
 .testimonials .testimonialBox p {
   font-size: 1.5rem;
 }

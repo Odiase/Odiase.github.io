@@ -10,7 +10,16 @@
 }
 
 html{
-    font-size: 70%;
+    font-size: 65%;
+}
+
+section{
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+section.active{
+    opacity: 1;
 }
 
 // header styling starts
@@ -373,7 +382,7 @@ header{
 
 
 // bio section starts
-#bio{
+.bio{
     background-color: rgba(247,229,148,.2);
     width: 100%;
     padding: 30px;
@@ -407,7 +416,7 @@ header{
     }
 }
 @media screen and (min-width:900px) {
-    #bio{
+    .bio{
         display: flex;
         justify-content: space-between;
 
@@ -424,7 +433,7 @@ header{
 
 
 // works and thoughts styling starts
-#work_and_thoughts{
+.work_and_thoughts{
     width: 100%;
     margin: auto;
     margin-top: 150px;
@@ -450,8 +459,8 @@ header{
             width: 100%;
             // margin-bottom: 90px;
             // flex-basis: 51%;
-            flex: 80%;
-            max-width: 80%;
+            flex: 100%;
+            max-width: 100%;
             margin: 50px auto;
             padding: 0 4px;
             font-size: 1.4rem;
@@ -490,7 +499,7 @@ header{
 }
 
 @media screen and (min-width: 900px) {
-    #work_and_thoughts .w_a_t_container{
+    .work_and_thoughts .w_a_t_container{
         flex-direction: row;
         justify-content: space-between;
 
@@ -596,6 +605,105 @@ header{
 }  
 //selected works styling ends
 
+
+.testimonials{
+    background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)), url(../site_images/nwike_art1.jpg);
+    background: white;
+    margin-top: 90px;
+    background-color: black;
+    color: white;
+    padding: 60px 0;
+
+    .swiper-container{
+        width: 95%;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        overflow: hidden;
+        margin-top: 70px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Playfair Display', 'serif';
+        font-weight: lighter;
+    }
+
+    .swiper-slide{
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        box-shadow: 0 15px 50px rgba(150,150,150,.4);
+        filter: blur(3px);
+        background-color: rgba(0,0,0,.1);
+        border-radius: 10px;
+    }
+
+    .swiper-slide-active{
+        filter: blur(0px);
+        background-color: white;
+    }
+
+    .testimonialBox{
+        position: relative;
+        width: 100%;
+        padding: 40px;
+        padding-top: 90px;
+        padding-bottom: 30px;
+        color: #999;
+
+        p{
+            
+            font-size: 1.5rem;
+        }
+
+        .quote{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            opacity: 0.2 ;
+            font-size: 1.2rem;
+        }
+
+        .details{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            .imgBx{
+                position: relative;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 10px;
+
+                img{
+                    position: absolute;
+                    top: 0;left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            h3{
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                line-height: 1.1em;
+
+            }
+        }
+    }
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-left{
+    background-image: none;
+}
 
 
 

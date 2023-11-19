@@ -115,6 +115,11 @@
 }
 
 
+.icons a img{
+    width: 40px;
+    height: 40px;
+}
+
 #whatsapp_icon,
 #insta_icon{
     display: block;
@@ -122,8 +127,8 @@
     right: 30px;
     // top: 95vh;
     bottom: 20px;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 
     &:hover{
         animation: pulse .3s infinite alternate;
@@ -131,8 +136,13 @@
     }
 }
 
+#whatsapp_icon{
+    width: 50px;
+    height: 50px;
+}
+
 #insta_icon{
-    right: 110px;
+    right: 80px;
 }
 
 

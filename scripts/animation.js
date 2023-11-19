@@ -51,4 +51,49 @@ close_nav_btn.addEventListener("click", () => {
 window.addEventListener("load", function() {
     const fadeInText = document.querySelector(".hero_text");
     fadeInText.classList.add("appear");
+
+    handleScroll();
 });
+
+
+
+// REVEAL SECTION ANIMATION
+
+let sections = document.querySelectorAll('section');
+
+function handleScroll() {
+    sections.forEach((section) => {
+        let rect = section.getBoundingClientRect();
+        let isVisible = (rect.top <= window.innerHeight / 2) && (rect.bottom >= window.innerHeight / 2);
+
+        if (isVisible) {
+            section.classList.add('active');
+        } else {
+            section.classList.remove('active');
+        }
+    });
+}
+// Listen for scroll events
+window.addEventListener('scroll', handleScroll);
+
+
+
+//////////// SLIDER SECTION
+var swiper_container = document.querySelector('.swiper-container')
+var swiper = new Swiper(swiper_container, {
+    effect : 'coverflow',
+    grabCursor : true,
+    centeredSlides : true,
+    slidesPerView : 'auto',
+    coverFlowEffect : {
+        rotate : 0,
+        tretch : 0,
+        depth : 100,
+        modifier : 2,
+        slideShadows : true
+    },
+    loop : true,
+    
+})
+
+console.log(swiper)
